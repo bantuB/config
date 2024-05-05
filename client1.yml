@@ -1,0 +1,31 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: client1
+  profiles:
+    active: git
+    
+  config:
+    import: "optional:configServer:http://localhost:9090"
+   
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: "http://localhost:8761/eurekaServer"   
+
+ # below details for the dashboard of the eureka Server
+info:
+  app:  
+    name: "client1"
+    discription:  "client1 test" 
+    version:  1.0    
+ 
+
+   
+name: client1
