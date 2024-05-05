@@ -1,0 +1,21 @@
+#
+##Registering with eureka server   
+#eureka:
+#  instance:
+#    prefer-ip-address: true   
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      default:  "http://localhost:8761/eurekaServer"
+#
+##      
+#info:
+#  app:
+#  name: client2
+#  discription:  testing client2
+#  version:  1.0
+#  
+## argument value reading purpose
+
+name: client2 value reading from the dev-env of configServer
