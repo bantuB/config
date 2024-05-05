@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: qa
+      
+      
+test: "reading value from the client1-qa env"
